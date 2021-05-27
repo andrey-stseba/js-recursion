@@ -1,0 +1,11 @@
+
+.vscode/
+
+.directory
+
+debug.log
+
+js-functions.js
+
+
+!.gitignore
