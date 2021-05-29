@@ -24,7 +24,8 @@ function pow(b, exp) {
 
 const userNumber = 2,
   exponent = 1.5;
-// возведение в целую степень.
+// возведение в целую степень
+
 try {
   const returnsExponent = pow(userNumber, exponent);
   console.log("Exponentiation = ", returnsExponent);

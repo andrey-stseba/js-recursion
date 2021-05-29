@@ -35,10 +35,12 @@ exponent % 1 !== 0 || exponent < 1
 
 //2. Реализовать вывод в консоль скобок (// bracketWrapper3(3); // => сразу в консоль)
 
-function consoleLogBracket(n) {
-  function bracketWrapper(n) {
-    return n === 1 ? "()" : `(${bracketWrapper(n - 1)})`;
+function consoleBracket(n) {
+  if (n === 0) {
+    return;
   }
-  console.log(`Вывод в консоль скобок ${bracketWrapper(n)}`);
+  consoleBracket(n - 1);
+  console.log(`(`);
+  console.log(`)`);
 }
-consoleLogBracket(3);
+consoleBracket(3);
