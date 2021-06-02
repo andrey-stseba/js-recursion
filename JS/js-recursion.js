@@ -39,8 +39,8 @@ function consoleBracket(n) {
   if (n === 0) {
     return;
   }
-  consoleBracket(n - 1);
   console.log(`(`);
+  consoleBracket(n - 1);
   console.log(`)`);
 }
 consoleBracket(3);
